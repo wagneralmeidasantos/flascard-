@@ -24,6 +24,33 @@ body{
 main{
     flex: 1;
 }
-.cabelocalho-link{
+.cabecalho-link{
     color: aliceblue;
+    text-decoration: none;
+}
+h1{
+    color: black;
+    font-size: 24px                                                                                                           ;
+}
+footer{
+    background-color: rgba(133, 202, 248, 0.795);
+    padding: 15px 25px;
+    color: black;
+}
+.cartao-interno{
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.cartao-frente, .cartao-verso{
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgb(22, 22, 22);
+    backface-visibility: hidden;
+}
+.cartao-verso{
+    transform: rotateY(180deg);
+}
+.cartao:hover  .cartao-interno{
+    
 }
